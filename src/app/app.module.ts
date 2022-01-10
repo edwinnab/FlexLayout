@@ -3,14 +3,20 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import {DefaultModule} from "./layouts/default/default.module";
+import {FullwodthModule} from "./layouts/fullwodth/fullwodth.module";
+
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    DefaultModule,
+    FullwodthModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]
